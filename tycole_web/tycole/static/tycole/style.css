@@ -17,3 +17,13 @@ p {
     text-decoration: none !important;
     font-family: 'Palanquin', sans-serif;
 }
+
+footer {
+    background-color: aliceblue;
+}
+
+#footerListItems a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}

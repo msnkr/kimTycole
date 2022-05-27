@@ -17,10 +17,10 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navBar">
         <div class="container-fluid container"  id="baseNavBar">
           <a class="navbar-brand fs-4" href="#" id="navBarLinks">
-            <img src="{% static 'tycole/brand.webp' %}" alt="" width="250" height="60" class="d-inline-block align-text-top">
+            <img src="{% static 'tycole/brand.webp' %}" alt="" width="400" height="100" class="d-inline-block align-text-top">
           </a>
           <ul class="nav">
               <li class="nav-item">
@@ -42,18 +42,23 @@
       {% block bodyblock %}
       {% endblock bodyblock %}
       <footer>
-        <div class="container" id="baseFooter">
-            <div class="row">
-                <div class="col-sm">
-                    <div>
-                        
-                    </div>
+          <div>
+              <div>
+              </div>
+          </div>
+        <div class="container" id="footerListItems">
+            <div class="d-flex flex-row-reverse">
+                <div>
+                    <a href="#" class="mx-3">Printing</a>
                 </div>
-                <div class="col-sm float-end d-flex flex-row-reverse">
-                    <img src="{% static 'tycole/facebook-brands.svg' %}" alt="" width="50" height="50" class="mx-3">
-                    <img src="{% static 'tycole/instagram-brands.svg' %}" alt="" width="50" height="50" class="mx-3">
-                    <img src="{% static 'tycole/mobile-screen-solid.svg' %}" alt="" width="50" height="50" class="mx-3">
-                    <img src="{% static 'tycole/whatsapp-brands.svg' %}" alt="" width="50" height="50" class="mx-3">
+                <div>
+                    <a href="#" class="mx-3">Promotional</a>
+                </div>
+                <div>
+                    <a href="#" class="mx-3">Contact Us</a>
+                </div>
+                <div>
+                    <a href="#" class="mx-3">Our Work</a>
                 </div>
             </div>
         </div>
