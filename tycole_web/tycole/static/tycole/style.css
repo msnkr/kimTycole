@@ -1,0 +1,19 @@
+h1, h2, h3, h4 {
+    font-family: 'Palanquin', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#navBarLinks {
+    color: black;
+    text-decoration: none;
+    font-family: 'Palanquin', sans-serif;
+}
+
+#navBarLink a:hover {
+    color: black !important;
+    text-decoration: none !important;
+    font-family: 'Palanquin', sans-serif;
+}
