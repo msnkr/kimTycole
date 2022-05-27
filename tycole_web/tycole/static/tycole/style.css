@@ -12,13 +12,7 @@ p {
     font-family: 'Palanquin', sans-serif;
 }
 
-#navBarLink a:hover {
-    color: black !important;
-    text-decoration: none !important;
-    font-family: 'Palanquin', sans-serif;
-}
-
-footer {
+body {
     background-color: aliceblue;
 }
 
