@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="{% static 'tycole/style.css' %}">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <nav class="navbar navbar-light" id="navBar">
+    <nav class="navbar navbar-dark" id="navBar">
         <div class="container-fluid container"  id="baseNavBar">
-          <a class="navbar-brand fs-4" href="#" id="navBarLinks">
-            <img src="{% static 'tycole/brand.webp' %}" alt="" width="400" height="100" class="d-inline-block align-text-top">
+          <a class="navbar-brand fs-4" href="{% url 'index' %}" id="navBarLinks">
+            <img src="{% static 'tycole/FB_wall.jpg' %}" alt="" width="400" height="100" class="d-inline-block align-text-top">
           </a>
           <ul class="nav">
               <li class="nav-item">
@@ -43,11 +43,17 @@
       {% endblock bodyblock %}
       <footer>
           <div>
-              <div>
+            <img src="{% static 'tycole/cmyk-1160167_edited.jpg' %}" alt="" width="100%" height="20%">
+          </div>
+          <div class="row">
+              <div class="col-sm">
+                  <div class="d-flex flex-row-center">
+                        
+                  </div>    
               </div>
           </div>
         <div class="container" id="footerListItems">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center py-3">
                 <div>
                     <a href="#" class="mx-3">Printing</a>
                 </div>
