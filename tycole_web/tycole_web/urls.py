@@ -20,5 +20,5 @@ from tycole import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-
+    path('printing/', views.printing, name='printing'),
 ]
