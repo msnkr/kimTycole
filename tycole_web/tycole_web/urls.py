@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('printing/', views.printing, name='printing'),
     path('promotional/', views.promotional, name='promotional'),
+    path('contact-us/', views.promotional, name='contact-us'),
 ]
