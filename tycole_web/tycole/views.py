@@ -8,3 +8,7 @@ def index(request):
 
 def printing(request):
     return render(request, 'tycole/printing.html')
+
+
+def promotional(request):
+    return  render(request, 'tycole/promotional.html')
