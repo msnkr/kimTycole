@@ -26,3 +26,6 @@ def contactform(request):
             raise ValidationError('Error')
     else:
         return render(request, 'tycole/contact_us.html', {'form': form})
+
+def thank_you(request):
+    return render(request, 'tycole/thank_you.html')
