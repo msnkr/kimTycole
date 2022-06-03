@@ -17,13 +17,12 @@ def promotional(request):
 
 def contactform(request):
     form = RequestContactForm()
-    if form.method == 'POST':
+    if request.method == 'POST':
         form = RequestContactForm(request.POST)
         if form.is_valid():
             form.save()
             return thank_you(request)
         else:
             raise ValidationError('Error')
-        
     else:
-        return render(request, 'tycole/contact_us.html' {'form': form})
+        return render(request, 'tycole/contact_us.html', {'form': form})

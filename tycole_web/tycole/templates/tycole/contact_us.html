@@ -1,0 +1,14 @@
+{% extends 'tycole/base.html' %}
+{% load static %}
+
+{% block bodyblock %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {% if form %}
+        <div>
+            
+        </div>
+    {% endif %}
+</form>
+{% endblock bodyblock %}
+
