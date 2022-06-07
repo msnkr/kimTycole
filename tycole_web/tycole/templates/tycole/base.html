@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="{% static 'tycole/style.css' %}">
-    <title>Home</title>
 </head>
 <body>
     <nav class="navbar navbar-dark" id="navBar">
@@ -44,12 +43,14 @@
       {% block bodyblock %}
       {% endblock bodyblock %}
       <footer>
-            <div class="d-flex justify-content-center">
-                <div class="mx-3 my-2"><a href="#"><p>Promotional</p></a></div>
-                <div class="mx-3 my-2"><a href="{% url 'printing' %}"><p>Printing</p></a></div>
-                <div class="mx-3 my-2"><a href="#"><p>Contact Us</p></a></div>
-                <div class="mx-3 my-2"><a href="#"><p>Our Work</p></a></div>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a href="{% url 'printing' %}" class="m-1">Printing</a>
+            <a href="{% url 'promotional' %}" class="m-1">Promotional</a>
+            <a href="{% url 'contact-us' %}" class="m-1">Contact Us</a>
+            <a href="{% url 'our-work' %}" class="m-1">Our Work</a>
+          </div>
+        </div>
       </footer>
       <!-- Bootstrap JavaScript -->
       <!-- JavaScript Bundle with Popper -->

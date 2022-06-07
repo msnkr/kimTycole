@@ -2,9 +2,9 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<title>Contact Us</title>
 
 {% block bodyblock %}
+    <title>Contact Us</title>
     <div class="text-center container">
         <h4 id="description">Contact Us</h4>
     </div>
@@ -14,14 +14,14 @@
         {% if form %}
             <div class="container">
                 <div class="row">
-                    <div class="form-group col-sm m-5">
+                    <div class="form-group col-auto m-5">
                         {{ form.name|as_crispy_field }}
                     </div>
-                    <div class="form-group col-sm m-5">
+                    <div class="form-group col-auto m-5">
                         {{ form.email|as_crispy_field }}
                         <small class="text-muted">We Won't Share Your Email With Anyone</small>
                     </div>
-                    <div class="form-group col-sm m-5">
+                    <div class="form-group col-auto m-5">
                         {{ form.number|as_crispy_field }}
                         <small class="text-muted">We Won't Share Your Number With Anyone.</small>
                     </div>
@@ -34,11 +34,12 @@
                 <div class="text-center m-5">
                     <button type="submit" class="btn btn-outline-primary">Send</button>
                 </div>
-
             </div>
             </div>
         {% endif %}
     </form>
+    <div>
+    </div>
   </div>
 {% endblock bodyblock %}
 
