@@ -29,3 +29,4 @@ def contactform(request):
 
 def thank_you(request):
     return render(request, 'tycole/thank_you.html')
+
