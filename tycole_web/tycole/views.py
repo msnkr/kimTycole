@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.core.mail import send_mail
 from tycole.forms import RequestContactForm
+from .models import OurWork
 
 # Create your views here.
 def index(request):
@@ -38,6 +39,7 @@ def contactform(request):
 def thank_you(request):
     return render(request, 'tycole/thank_you.html')
 
-
+class OurWorkListView(ListView):
+    model = OurWork
 
 

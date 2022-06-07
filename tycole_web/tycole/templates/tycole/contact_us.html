@@ -19,11 +19,11 @@
                     </div>
                     <div class="form-group col-sm m-5">
                         {{ form.email|as_crispy_field }}
-                        <small>We Won't Share Your Email With Anyone</small>
+                        <small class="text-muted">We Won't Share Your Email With Anyone</small>
                     </div>
                     <div class="form-group col-sm m-5">
                         {{ form.number|as_crispy_field }}
-                        <small>We Won't Share Your Number With Anyone.</small>
+                        <small class="text-muted">We Won't Share Your Number With Anyone.</small>
                     </div>
                 </div>
                 <div>
@@ -34,6 +34,7 @@
                 <div class="text-center m-5">
                     <button type="submit" class="btn btn-outline-primary">Send</button>
                 </div>
+
             </div>
             </div>
         {% endif %}
