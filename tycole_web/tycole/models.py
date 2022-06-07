@@ -13,8 +13,9 @@ class RequestContact(models.Model):
         return self.name
 
 class OurWork(models.Model):
+    number = models.CharField(max_length=3, default=None)
     date = models.DateTimeField(default=timezone.now)
     img = models.ImageField()
 
     def __str__(self):
-        return self.date
+        return self.number

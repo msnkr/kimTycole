@@ -27,7 +27,7 @@ urlpatterns = [
     path('promotional/', views.promotional, name='promotional'),
     path('contact-us/', views.contactform, name='contact-us'),
     path('contact-us/thank-you/', views.contactform, name='thank-you'),
-    path('our-work', views.OurWorkListView.as_view, name='our-work'),
+    path('our-work', views.OurWorkListView.as_view(), name='our-work'),
 ]
 
 if settings.DEBUG:

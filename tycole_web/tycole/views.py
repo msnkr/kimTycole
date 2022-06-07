@@ -41,5 +41,6 @@ def thank_you(request):
 
 class OurWorkListView(ListView):
     model = OurWork
+    ordering = ['-date']
 
 
