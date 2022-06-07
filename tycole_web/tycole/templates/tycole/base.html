@@ -18,28 +18,35 @@
     <link rel="stylesheet" href="{% static 'tycole/style.css' %}">
 </head>
 <body>
-    <nav class="navbar navbar-dark" id="navBar">
-        <div class="container-fluid container"  id="baseNavBar">
-          <a class="navbar-brand fs-4" href="{% url 'index' %}" id="navBarLinks">
-            <img src="{% static 'tycole/FB_wall.jpg' %}" alt="" width="400" height="120" class="d-inline-block align-text-top">
-          </a>
-          <ul class="nav">
-              <li class="nav-item">
-                  <a href="{% url 'printing' %}" class="nav-link fs-4" id="navBarLinks">Printing</a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'promotional' %}" class="nav-link fs-4" id="navBarLinks">Promotional</a>
+  <nav class=" container navbar navbar-expand-lg" id="navBar">
+    <div class="container-fluid">
+      <img src="{% static 'tycole/FB_wall.jpg' %}" alt="" class="navbar-brand" height="60%" width="30%">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-4 mx-2" href="{% url 'index' %}" id="navBarLinks">Home</a>
             </li>
             <li class="nav-item">
-                <a href="{% url 'contact-us' %}" class="nav-link fs-4" id="navBarLinks">Contact Us</a>
+              <a class="nav-link fs-4 mx-2" href="{% url 'printing' %}" id="navBarLinks">Printing</a>
             </li>
             <li class="nav-item">
-                <a href="{% url 'our-work' %}" class="nav-link fs-4" id="navBarLinks">Our Work
-                </a>
+              <a class="nav-link fs-4 mx-2" href="{% url 'promotional' %}" id="navBarLinks">Promotional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 mx-2" href="{% url 'contact-us' %}" id="navBarLinks">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 mx-2" href="{% url 'our-work' %}" id="navBarLinks">Our Work</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
       {% block bodyblock %}
       {% endblock bodyblock %}
       <footer>
