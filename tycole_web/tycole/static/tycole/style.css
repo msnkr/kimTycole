@@ -92,3 +92,11 @@ footer {
 button {
     text-decoration: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
