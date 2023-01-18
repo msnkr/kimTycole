@@ -38,7 +38,7 @@ footer {
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  /* Create two equal columns that sits next to each other */
   .column {
     flex: 25%;
     max-width: 40%;
@@ -86,4 +86,9 @@ footer {
         margin: 2%;
         text-align: center;
     }
+}
+
+#index-digital, button {
+    text-align: center;
+    padding: 2%;
 }
