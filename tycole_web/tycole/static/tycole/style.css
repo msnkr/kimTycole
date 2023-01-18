@@ -88,7 +88,11 @@ footer {
     }
 }
 
-#index-digital, button {
+#index-digital {
     text-align: center;
     padding: 2%;
+}
+
+button {
+    text-decoration: none;
 }
