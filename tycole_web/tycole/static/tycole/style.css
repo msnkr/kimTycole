@@ -4,6 +4,7 @@ h1, h2, h3, h4 {
 
 p {
     font-family: 'Old Standard TT', serif;
+    font-size: 20px;
 }
 
 #navBarLinks {
@@ -86,11 +87,6 @@ footer {
         margin: 2%;
         text-align: center;
     }
-}
-
-#index-digital {
-    text-align: center;
-    padding: 2%;
 }
 
 button {
