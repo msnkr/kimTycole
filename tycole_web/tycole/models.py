@@ -21,11 +21,5 @@ class OurWork(models.Model):
     image = models.ImageField()
 
 
-    # def save_file(self):
-    #     super().save()
-    #     img = Image.open(self.image.path)
-    #     img.save(self.image.path, optimize=True, quality=35)
-
-
     def __str__(self):
         return self.name
