@@ -20,9 +20,9 @@
     <link rel="shortcut icon" href="{% static 'tycole/favicon.png' %}" type="image/x-icon">
 </head>
 <body>
-  <nav class=" container navbar navbar-expand-lg" id="navBar">
+  <nav class="navbar navbar-expand-lg sticky-top" id="navBar" style="background-color: #00000066;">
     <div class="container-fluid">
-      <img src="{% static 'tycole/FB_wall.jpg' %}" alt="" class="navbar-brand" height="60%" width="30%">
+      <img src="{% static 'tycole/FB_wall.jpg' %}" alt="" class="navbar-brand" height="20%" width="10%">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,19 +30,19 @@
         <div class="d-flex">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fs-4 mx-2" href="{% url 'index' %}" id="navBarLinks">Home</a>
+              <a class="nav-link fs-5 mx-2" href="{% url 'index' %}" id="navBarLinks">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 mx-2" href="{% url 'printing' %}" id="navBarLinks">Printing</a>
+              <a class="nav-link fs-5 mx-2" href="{% url 'printing' %}" id="navBarLinks">Printing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 mx-2" href="{% url 'promotional' %}" id="navBarLinks">Promotional</a>
+              <a class="nav-link fs-5 mx-2" href="{% url 'promotional' %}" id="navBarLinks">Promotional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 mx-2" href="{% url 'contact-us' %}" id="navBarLinks">Contact Us</a>
+              <a class="nav-link fs-5 mx-2" href="{% url 'contact-us' %}" id="navBarLinks">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 mx-2" href="{% url 'our-work' %}" id="navBarLinks">Our Work</a>
+              <a class="nav-link fs-5 mx-2" href="{% url 'our-work' %}" id="navBarLinks">Our Work</a>
             </li>
           </ul>
         </div>
@@ -52,14 +52,25 @@
       {% block bodyblock %}
       {% endblock bodyblock %}
       <footer>
-        <div class="row justify-content-center">
-          <div class="col-auto p-lg-5" id="footerLinks">
-            <a href="{% url 'printing' %}" class="m-1" id="footerLink">Printing</a>
-            <a href="{% url 'promotional' %}" class="m-1" id="footerLink">Promotional</a>
-            <a href="{% url 'contact-us' %}" class="m-1" id="footerLink">Contact Us</a>
-            <a href="{% url 'our-work' %}" class="m-1" id="footerLink">Our Work</a>
+        <div class="row text-center p-5">
+          <div class="footer-h2 p-4 col">
+            <h2>Navigation</h2>
+            <p class="footer-links"><a href="{% url 'index' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></p>
+            <p class="footer-links"><a href="{% url 'printing' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Printing</a></p>
+            <p class="footer-links"><a href="{% url 'promotional' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Promotional</a></p>
+            <p class="footer-links"><a href="{% url 'contact-us' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contact</a></p>
+            <p class="footer-links"><a href="{% url 'our-work' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Our Work</a></p>
           </div>
-        </div>
+          <div class="col footer-h2 p-4">
+            <h2>Address</h2>
+            <p><i class="fa fa-map-pin" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, accusantium!</p>
+          </div>
+          <div class="col footer-h2 p-4">
+            <h2>Contact</h2>
+            <a href="mailto:info@tycole.co.za" id="icon-footer"><i class="fa fa-envelope" aria-hidden="true"></i></a> info@tycole.co.za  
+            <p class="m-3 fs-4"><i class="fa fa-phone-square" aria-hidden="true" id="icon-footer"></i> 011 432 1822</p>
+          </div>
+        </div>    
       </footer>
       <!-- Bootstrap JavaScript -->
       <!-- JavaScript Bundle with Popper -->
