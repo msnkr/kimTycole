@@ -20,63 +20,10 @@
     <link rel="shortcut icon" href="{% static 'tycole/favicon.png' %}" type="image/x-icon">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top" id="navBar" style="background-color: #00000066;">
-    <div class="container-fluid">
-      <img src="{% static 'tycole/tycole_logo.png' %}" alt="" class="navbar-brand" height="20%" width="10%">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="d-flex">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fs-5 mx-2" href="{% url 'index' %}" id="navBarLinks">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 mx-2" href="{% url 'printing' %}" id="navBarLinks">Printing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 mx-2" href="{% url 'promotional' %}" id="navBarLinks">Promotional</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 mx-2" href="{% url 'contact-us' %}" id="navBarLinks">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 mx-2" href="{% url 'our-work' %}" id="navBarLinks">Our Work</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div>
-    <div>
-        <img src="{% static 'tycole/frontpagelogo.jpg' %}" alt="" width="100%"class="index-image">
-    </div>
-  </div>
+ 
       {% block bodyblock %}
       {% endblock bodyblock %}
-      <footer>
-        <div class="row text-center p-5">
-          <div class="footer-h2 p-4 col">
-            <h2>Navigation</h2>
-            <p class="footer-links"><a href="{% url 'index' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></p>
-            <p class="footer-links"><a href="{% url 'printing' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Printing</a></p>
-            <p class="footer-links"><a href="{% url 'promotional' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Promotional</a></p>
-            <p class="footer-links"><a href="{% url 'contact-us' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contact</a></p>
-            <p class="footer-links"><a href="{% url 'our-work' %}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Our Work</a></p>
-          </div>
-          <div class="col footer-h2 p-4">
-            <h2>Address</h2>
-            <p><i class="fa fa-map-pin" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, accusantium!</p>
-          </div>
-          <div class="col footer-h2 p-4">
-            <h2>Contact</h2>
-            <a href="mailto:info@tycole.co.za" id="icon-footer"><i class="fa fa-envelope" aria-hidden="true"></i></a> info@tycole.co.za  
-            <p class="m-3 fs-4"><i class="fa fa-phone-square" aria-hidden="true" id="icon-footer"></i> 011 432 1822</p>
-          </div>
-        </div>    
-      </footer>
+ 
       <!-- Bootstrap JavaScript -->
       <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
