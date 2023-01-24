@@ -6,3 +6,16 @@ p {
     font-family: 'Old Standard TT', serif;
 }
 
+#navbarLinks a {
+    text-decoration: underline;
+    text-underline-offset: 40%;
+    text-decoration-thickness: 20%;
+    text-decoration-color: white;
+}
+
+#navbarLinks a:hover {
+    background-color: lightblue;
+    text-decoration-color: lightblue;
+    font-size: larger;
+}
+
