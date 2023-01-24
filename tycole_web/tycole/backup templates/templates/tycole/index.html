@@ -1,0 +1,113 @@
+{% extends 'tycole/base.html' %}
+{% load static %}
+
+{% block bodyblock %}
+<title>Home</title>
+<div id="homePageFull">
+    <div>
+        <div>
+            <img src="{% static 'tycole/digitalprintinghome.jpg' %}" alt="" width="100%"class="mb-2 index-image">
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center fs-1" id="description">What We Do!</h2>
+        <div class="row mt-1">
+            <div class="col-sm">
+                <h2 class="'text-center mt-1 text-center" id="index-digital">Printing <br> Litho, Digtal & more</h2>
+                    <p class="text-lg-center m-lg-3 p-3 p-lg-4 text-center" id="index-digital">We offer a wide variety of printing solutions, for all your corporate needs. <br>
+                        A committed approach to print excellence allows us to offer you the best solution to meet your budget and requirement’s. <br>
+                        Using the modern digital print solutions to the traditional printing processes, thus allowing you to to benefit from the best technology solutions. <br> We deliver the results you’re looking for.</p>
+                </div>
+                <div class="col-sm">
+                        <img src="{% static 'tycole/pexels-yoshi-10162528.jpg' %}" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="row mt-1 mb-2">
+                    <div class="col-sm">
+                        <img src="{% static 'tycole/pexels-natasha-fernandez-811572.jpg' %}" alt="" width="100%">
+                    </div>
+                    <div class="col-sm">
+                        <h2 class="text-center mt-2" id="index-digital">Promotional Products <br> Gifts, Clothing & more</h2>
+                        <p class="text-lg-center m-lg-3 p-3 p-lg-4" id="index-digital">We will source and provide you with the perfect gifting solution for all your corporate occasions, and to improve the potential impact of the product, we will also brand it! <br> Not only do we provide affordable promotional gifts that are brilliant for marketing, but we are also a below the line marketing company. <br> We make it our business to understand your company needs and will deliver the perfect solution quickly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center fs-1" id="description">Our Clients!</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_9.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_2.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_3.png' %}" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_4.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_5.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_6.png' %}" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_7.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_8.png' %}" alt="" width="100%">
+                </div>
+                <div class="col-sm">
+                    <img src="{% static 'tycole/logo_1.png' %}" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h2 class="text-center fs-1 mt-1" id="description">How We Can Help You!</h2>
+            </div>
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="card col-sm my-1 mx-auto pt-2">
+                        <img src="{% static 'tycole/pexels-natasha-fernandez-811572.jpg' %}" alt="" class="card-img-top pt-1" width="50%">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Promotional Printing</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facere ratione impedit quod aspernatur corrupti quidem dolorem necessitatibus, maxime corporis!</p>
+                            <button class="btn btn-outline-primary"><a href="{% url 'promotional' %}">Promotional</a></button>
+                        </div>
+                    </div>
+                    <div class="card col-sm my-1 mx-auto pt-2">
+                        <img src="{% static 'tycole/webs.jpg' %}" alt="" class="card-img-top pt-1" width="50%" height="60%">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Website Design</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facere ratione impedit quod aspernatur corrupti quidem dolorem necessitatibus, maxime corporis!</p>
+                            <button class="btn btn-outline-primary"><a href="#">Website Design</a></button>
+                        </div>
+                    </div>
+                    <div class="card col-sm my-1 mx-auto pt-2">
+                        <img src="{% static 'tycole/pexels-rachel-claire-4857782.jpg' %}" alt="" class="card-img-top pt-1" width="50%">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shop Vinyl</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facere ratione impedit quod aspernatur corrupti quidem dolorem necessitatibus, maxime corporis!</p>
+                            <button class="btn btn-outline-primary"><a href="{% url 'printing' %}">Printing</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock bodyblock %}
