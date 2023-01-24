@@ -3,19 +3,4 @@
 
 {% block bodyblock %}
 <title>Our Work</title>
-
-    <div class="container">
-        <div class="text-center" id="description">
-            <h4>Our Work</h4>
-        </div>
-    </div>
-    <div>
-        <div class="row">
-            {% for work in ourwork_list %}
-                 <div class="col-sm-4 mt-lg-4 m-1 col-lg-3">
-                    <img src="{{ work.image.url }}" alt="" width="100%" class="mx-lg-1 my-lg-1">
-                </div>
-            {% endfor %}
-        </div>
-    </div>
 {% endblock bodyblock %}
