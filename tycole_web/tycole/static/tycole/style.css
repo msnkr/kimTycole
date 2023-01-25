@@ -1,3 +1,9 @@
+:root {
+    --transparent: #00000000;
+    --dimGrey: #696969;
+    --tycoleColor: rgb(2, 131, 214);
+}
+
 h1, h2, h3, h4 {
     font-family: 'Bebas Neue', cursive;
 }
@@ -6,16 +12,22 @@ p {
     font-family: 'Old Standard TT', serif;
 }
 
+.navbar {
+    position: fixed;
+    background-color: var(--transparent) !important;
+}
+
 #navbarLinks a {
+    font-size: large;
+    color: white;
     text-decoration: underline;
-    text-underline-offset: 40%;
+    text-underline-offset: 50%;
     text-decoration-thickness: 20%;
-    text-decoration-color: white;
+    text-decoration-color: var(--tycoleColor);
 }
 
 #navbarLinks a:hover {
-    background-color: lightblue;
-    text-decoration-color: lightblue;
+    color: white;
+    text-decoration-color: white;
     font-size: larger;
 }
-
