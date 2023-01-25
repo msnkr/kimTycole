@@ -1,5 +1,5 @@
 :root {
-    --transparent: #00000000;
+    --transparent: #00000080;
     --dimGrey: #696969;
     --tycoleColor: rgb(2, 131, 214);
 }
@@ -13,6 +13,7 @@ p {
 }
 
 .navbar {
+    width: 100%;
     position: fixed;
     background-color: var(--transparent) !important;
 }
@@ -30,4 +31,30 @@ p {
     color: white;
     text-decoration-color: white;
     font-size: larger;
+}
+
+.footer {
+    background-color: var(--dimGrey);
+    color: white;
+}
+
+.footer a, footer tr {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--tycoleColor);
+}
+
+.index-heading {
+    color: var(--dimGrey);
+}
+
+.our-clients-index {
+    color: var(--dimGrey);
+}
+
+.client-favorites-index {
+    color: var(--dimGrey);
 }
