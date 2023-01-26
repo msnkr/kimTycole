@@ -40,10 +40,10 @@
             <a class="nav-link" href="{% url 'promotional' %}">Promotional</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact-us' %}">Contact Us</a>
+            <a class="nav-link" href="{% url 'contact-us' %}">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'our-work' %}">Our Work</a>
+            <a class="nav-link" href="{% url 'our-work' %}">Work</a>
           </li>
         </ul>
       </div>
@@ -53,17 +53,15 @@
       {% endblock bodyblock %}
       <!-- Bootstrap JavaScript -->
       <!-- JavaScript Bundle with Popper -->
-    <footer class="footer p-4">
-      <div class="container-fluid p-4 ml-5">
+    <footer class="footer p-5">
+      <div class="container-fluid ml-5">
         <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4">
+          <div class="col-lg-6 col-md-12 mb-4 text-start">
             <div>
               <img src="{% static 'tycole/tycole_logo_full_white.png' %}" alt="" width="20%" class="m-3">
             </div>
-            <p class="mx-5">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-              voluptatem veniam, est atque cumque eum delectus sint!
+            <p class="mx-5 px-5 text-start">
+              We’re a broad-scope printing company offering a wide range of printing solutions for a large variety of printed marketing materials, office stationery and forms.<br> We work with you, our customer, to achieve the best possible print solutions to meet your vision and your budget.<br> Offering print and so much more.
             </p>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 text-start">
@@ -84,6 +82,14 @@
               <li class="mb-1">
                 <a href="{% url 'contact-us' %}"><i class="fa fa-arrow-circle-right mx-1" aria-hidden="true"></i>Contact Us</a>
               </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 text-start footer-contact">
+            <h5>Contact</h5>
+            <ul>
+              <li><p><i class="fa fa-map-marker icon footer-contact" aria-hidden="true"></i>Edenvale Johannesburg <br> South Africa</p></li>
+              <li><p><i class="fa fa-envelope icon footer-contact" aria-hidden="true"></i>Info@tycole.co.za</p></li>
+              <li><p><i class="fa fa-phone-square icon footer-contact" aria-hidden="true"></i>011 011 0111</p></li>
             </ul>
           </div>
         </div>

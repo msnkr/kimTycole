@@ -58,3 +58,12 @@ p {
 .client-favorites-index {
     color: var(--dimGrey);
 }
+
+.icon {
+    margin-right: 2%;
+    font-size: larger;
+}
+
+.footer-contact ul li {
+    text-decoration: none;
+}
