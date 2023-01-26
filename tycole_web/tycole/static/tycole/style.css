@@ -1,5 +1,5 @@
 :root {
-    --transparent: #00000080;
+    --transparent: #00000090;
     --dimGrey: #696969;
     --tycoleColor: rgb(2, 131, 214);
 }
@@ -65,5 +65,11 @@ p {
 }
 
 .footer-contact ul li {
+    text-decoration: none;
+}
+
+.client-favorite-icon i {
+    font-size: 1000%;
+    color: var(--dimGrey);
     text-decoration: none;
 }

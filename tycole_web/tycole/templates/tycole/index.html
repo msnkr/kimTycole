@@ -4,7 +4,7 @@
 
 {% block bodyblock %}
 <div>
-  <img src="{% static 'tycole/digitalprinting.jpg' %}" alt="" class="w-100 home-page-image">
+  <img src="{% static 'tycole/digitalprintinghome.jpg' %}" alt="" class="w-100 home-page-image">
 </div>
 <div class="container-fluid">
   <div class="row">
@@ -21,10 +21,20 @@
     </div>
   </div>
 </div>
-<div class="container-fluid client-favorites-index">
-  <h1 class="text-center my-5">Client Favorites</h1>
+<div class="container">
+  <div class="row">
+    <h1 class="text-center mt-5 client-favorites-index">Client Favorites</h1>
+    <div class="col-lg-4 text-center">
+      <p class="client-favorite-icon"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i></p>
+    </div>
+    <div class="col-lg-4 text-center">
+      <p class="client-favorite-icon"><i class="fa fa-certificate" aria-hidden="true"></i></p>
+    </div>
+    <div class="col-lg-4 text-center">
+      <p class="client-favorite-icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></p>
+    </div>
+  </div>
 </div>
-
 <div class="container-fluid my-5">
   <div class="text-center m-4 our-clients-index">
     <h1>Our Clients</h1>
