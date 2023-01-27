@@ -73,3 +73,14 @@ p {
     color: var(--dimGrey);
     text-decoration: none;
 }
+
+.button-index a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--tycoleColor) !important;
+}
+
+.btn-base {
+    background-color: var(--tycoleColor) !important;
+    border: var(--tycoleColor) !important;
+}
